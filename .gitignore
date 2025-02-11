@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build outputs
+dist/
+out/
+.vite/
+.vitepress/
+.next/
+.cache/
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Log files
+*.log
+logs/
+yarn-error.log
+pnpm-debug.log
+
+# Dependency directories
+.pnp/
+.pnp.js
+.docusaurus/
+.nyc_output/
+coverage/
+build/
+tmp/
+temp/
+
+# Tailwind CSS output
+*.css.map
+
+# MacOS system files
+.DS_Store
+
+# Linux system files
+*.swp
