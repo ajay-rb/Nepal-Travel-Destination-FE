@@ -25,7 +25,7 @@ const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", { username, password });
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, { username, password });
       localStorage.setItem("token", response.data.token);
       setToken(response.data.token);
       setUser(jwtDecode(response.data.token));

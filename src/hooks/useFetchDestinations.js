@@ -14,10 +14,10 @@ const useFetchDestinations = ({ id = null, selectedTag = '' } = {}) => {
       try {
         let response;
         if (id) {
-          response = await axios.get(`http://localhost:5000/api/destinations/${id}`);
+          response = await axios.get(`${import.meta.env.VITE_API_URL}/api/destinations/${id}`);
           setData(response.data);
         } else {
-          response = await axios.get("http://localhost:5000/api/destinations", {
+          response = await axios.get(`${import.meta.env.VITE_API_URL}/api/destinations`, {
             params: { tags: selectedTag },
           });
           setData(response.data);
