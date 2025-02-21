@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center bg-white p-4 shadow-md mb-4">
-      <h1 className="text-2xl md:text-3xl font-bold cursor-pointer" onClick={()=>navigate('/')}>Nepali Travel Destinations</h1>
+      <h1 className="text-2xl md:text-3xl font-bold cursor-pointer " onClick={()=>navigate('/')}>Nepali Travel Destinations</h1>
 
       <div className="hidden md:flex gap-4">
         {user && (
